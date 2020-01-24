@@ -1,0 +1,120 @@
+h1{
+/*	font-family:"Arial Black", Gadget, sans-serif;*/
+	font-family:"Times New Romans", Gadget, sans-serif;
+}
+body{
+	color:black;
+	background-color:silver;
+	left-margin:10px;
+	right-margin:10px;
+}
+table{
+	width:95%;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+
+.s2{
+	background-color:teal;
+	   border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+td
+{
+	border:teal 2px solid;
+	word-wrap:break-word;
+}
+table#close{
+
+	table-layout:default;
+	border-collapse:seperate;
+	border-spacing: 5px 5px;
+	border:none;
+	vertical-align:top;
+}
+table.s1
+{
+	border:none;
+	vertical-align:top;
+}
+table.none
+{
+	border:none;
+	vertical-align:top;
+}
+table.none td
+{
+	border: none;
+}
+tr.row td{
+	text-decoration:italic;
+}
+th.status{
+	width:8%;
+}
+th.name{
+	width:20%;
+}
+th.abt{
+	width:40%;
+	padding:5px 5px 5px 5px;
+}
+th.date{
+	width:15%;
+}
+th.con{
+	width:10%;
+	right-padding:10px;
+	left-padding:10px;
+}
+th.func1{
+	width:8%;
+	right-padding:10px;
+	left-padding:10px;
+	
+}
+th.func2{
+	width:8%;
+	right-padding:10px;
+	left-padding:10px;
+	
+}
+input[type=submit] {
+    width: 20em;  height: 2em;
+}
+ul.d1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li.d1 {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a.active {
+    background-color: teal;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+b.d2{
+	color: white;
+}
