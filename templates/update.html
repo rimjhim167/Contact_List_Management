@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>{{ t }}</title>
+	</head>
+	<style>	
+		h1{
+			font-family:"Arial Black", Gadget, sans-serif;
+		}
+		body{
+			background-color:silver;
+		}
+		.s2{
+			background-color:teal;
+	   		border: none;
+ 		 	color: white;
+  			text-align: center;
+  			display: inline-block;
+  			font-size: 20px;
+  			margin: 4px 2px;
+  			cursor: pointer;
+}
+	</style>
+<body>
+	<h1>{{ h }}</h1>
+	<hr>
+	
+	<form action="/action3" method="POST">
+	{% for c in c %}
+		Unique Object ID : {{ c['_id'] }}<br/>
+	<input type="text" name="_id" value="{{ c['_id'] }}" hidden>
+
+	<table>
+	<tr>
+	<td>Name</td><td> : </td><td><input type="text" name="name" value="{{ c['name'] }}" placeholder="{{ c['name'] }}"></td>
+	</tr>
+	<tr>
+	<td>Contact Number</td><td> : </td><td><input type="text" name="con" rows=3 cols=30 placeholder="{{ c['con'] }}" required></td>
+	</tr>
+	<tr>
+	<td>Date Of Birth</td><td> : </td><td><input type="text" name="date" value="{{ c['date'] }}" placeholder="{{ c['date'] }}"></td>
+	</tr>
+	<tr>
+	<td>About</td><td> : </td><td><textarea type="text" name="abt" placeholder="{{ c['abt'] }}">{{ c['abt'] }}  </textarea></td>
+	</tr>
+
+
+	</table>
+	{% endfor %}
+	<button type="submit" class="s2"> Update Contact </button>
+	<br/>
+	</form>
+	<a href="/">Contact List</a>
+</body>
+</html>
